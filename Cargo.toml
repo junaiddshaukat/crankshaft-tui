@@ -1,0 +1,10 @@
+[package]
+name = "crankshaft-tui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ratatui = "0.24"  # For Terminal UI
+crossterm = "0.27" # For handling input & events
+tokio = { version = "1", features = ["full"] } # Async runtime for real-time monitoring
+rand = "0.9.0"
