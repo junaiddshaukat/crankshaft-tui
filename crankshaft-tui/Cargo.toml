@@ -1,0 +1,20 @@
+[package]
+name = "crankshaft-tui"  # Changed from "tui" to "crankshaft-tui"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["The Rust WDL project developers"]
+description = "Terminal User Interface for Crankshaft"
+repository = "https://github.com/stjude-rust-labs/crankshaft"
+
+[dependencies]
+crankshaft = { path = "../crankshaft" }
+crankshaft-engine = { path = "../crankshaft-engine" }
+crossterm = "0.27.0"
+ratatui = "0.24.0"
+tokio = { workspace = true }
+eyre = { workspace = true }
+tracing = { workspace = true }
+
+[lints]
+workspace = true
